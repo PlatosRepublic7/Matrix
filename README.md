@@ -6,3 +6,7 @@ entire allocation of memory is done on the heap. This can be done by passing a f
 struct. The reassembly of the matrix, with fill-values, can also be done and printed into a specified output file. 
 
 The purpose of this repository is to show an academic exercise. It is not intended, nor was it designed, to be used in practice.
+
+The various other files contained in this repository, that is those other than matrix.c, are purely for testing purposes and do not interfere with 
+the actual execution of the source file. So long as the input file contains no characters other than digits and spaces it should work as intended.
+However, this is by no means a finished and bug-free project. It was intended to be anything other than an exercise.
