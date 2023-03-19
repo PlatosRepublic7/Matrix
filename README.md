@@ -9,4 +9,4 @@ The purpose of this repository is to show an academic exercise. It is not intend
 
 The various other files contained in this repository, that is those other than matrix.c, are purely for testing purposes and do not interfere with 
 the actual execution of the source file. So long as the input file contains no characters other than digits and spaces it should work as intended.
-However, this is by no means a finished and bug-free project. It was intended to be anything other than an exercise.
+However, this is by no means a finished and bug-free project. It was not intended to be anything other than an exercise.
