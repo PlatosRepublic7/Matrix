@@ -28,7 +28,7 @@ struct Matrix {
     int fillValue;
 };
 
-/* Function Prototypes provided for the assignment */
+
 struct Matrix MTRX_alloc(char *filename, int fillValue);
 void MTRX_free(struct Matrix* m);
 int MTRX_getElement(struct Matrix *m, int row, int column);
@@ -36,8 +36,6 @@ void MTRX_write(struct Matrix *m, char *filename);
 struct Matrix MTRX_add(struct Matrix *a, struct Matrix *b, int fillValue);
 struct Matrix MTRX_multiply(struct Matrix *a, struct Matrix *b, int fillValue);
 struct Matrix MTRX_transpose(struct Matrix *m);
-
-/* Function Prototypes I added */
 int get_power(int base, int exp);
 int compute_value(char numString[10], int sLen, int isNeg);
 struct Matrix new_matrix(int fillValue);
