@@ -1,0 +1,55 @@
+void E_List_Append(struct Header *h, char rowCol, int row, int col, int val);
+void E_List_Append(struct Header *h, char rowCol, int row, int col, int val) {
+    struct Element *elem = malloc(sizeof(struct Element));
+    elem->row = row;
+    elem->column = col;
+    elem->value = val;
+    elem->columnElement = NULL;
+    elem->rowElement = NULL;
+    if (E_List_empty(h)) {
+        if (rowCol == 'r') {
+            h->element = elem;
+        }
+        else if (rowCol == 'c') {
+            h->element = elem;
+        }
+    }
+    else {
+        if (rowCol == 'r') {
+            h->element->rowElement = elem;
+            h->element = elem;
+        }
+        else if (rowCol == 'c') {
+            h->element->columnElement = elem;
+            h->element = elem;
+        }
+
+    }
+}
+
+void H_List_Append(struct Matrix *m, char rowCol, int index);
+void H_List_Append(struct Matrix *m, char rowCol, int index) {
+    struct Header *header = malloc(sizeof(struct Header));
+    header->index = index;
+    header->element = NULL;
+    header->header = NULL;
+
+    if (H_List_empty(m, rowCol)) {
+        if (rowCol == 'r') {
+            m->headRowHeader = header;
+        }
+        else if (rowCol == 'c') {
+            m->headColumnHeader = header;
+        }
+    }
+    else {
+        if (rowCol == 'r') {
+            m->headRowHeader->header = header;
+            m->headRowHeader = header;
+        }
+        else if (rowCol == 'c') {
+            m->headColumnHeader->header = header;
+            m->headColumnHeader = header;
+        }
+    }
+}
