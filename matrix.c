@@ -1,7 +1,5 @@
 /*
     Ryan Kitson
-    CS288-006
-    Homework 3
 */
 
 #include <stdio.h>
